@@ -1,0 +1,17 @@
+# This is not a complete lammps control file. You must add sections that are relevant to your study
+compute         qlwlhat_6 all orientorder/atom components 6 cutoff ${SP_cut}
+compute         Nc_6 all coord/atom orientorder qlwlhat_6 0.5
+
+compute         qlwlhat_8 all orientorder/atom components 8 cutoff ${SP_cut}
+compute         Nc_8 all coord/atom orientorder qlwlhat_8 0.5
+compute         str all stress/atom NULL
+
+compute         ent all entropy/atom 0.25 7.50
+compute         bins all chunk/atom bin/sphere 0.0 0.0 0.0 5.0 55.0 25 discard no
+fix             avgent all ave/chunk 1 1 1 bins c_ent file avgent.profile
+fix             avgent all ave/chunk 1 1 1 bins c_Nc_6 file avgNc.profile
+
+dump            1 all custom 1 filename.dump id type x y z c_qlwlhat_6[1] c_qlwlhat_6[2] c_qlwlhat_6[3] c_qlwlhat_6[4] c_Nc_6 c_Nc_8 fx fy fz
+thermo_style    custom step temp epair etotal
+
+run             0
