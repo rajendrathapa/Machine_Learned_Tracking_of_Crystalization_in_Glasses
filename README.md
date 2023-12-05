@@ -19,5 +19,6 @@ This is open-source project that leverages machine learning techniques to track 
 ## Contributing/Collaborating
 We are open to suggestions and genuinely comitted to making the code better. If you wish to colloborate in future projects that may involve simulations on different simualation packages, please reach out the the author. 
 
+![Growth Rates Predicted by ML for various seed size](https://github.com/rajendrathapa/Machine_Learned_Tracking_of_Crystalization_in_Glasses/blob/main/Growth_rates.png?raw=true)
 
 
