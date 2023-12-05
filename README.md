@@ -16,5 +16,8 @@ This is open-source project that leverages machine learning techniques to track 
 - Run Part_I_KMeans*.ipynb
 - Run KM3_SCG_*.ipynb
 
+## Contributing/Collaborating
+We are open to suggestions and genuinely comitted to making the code better. If you wish to colloborate in future projects that may involve simulations on different simualation packages, please reach out the the author. 
+
 
 
