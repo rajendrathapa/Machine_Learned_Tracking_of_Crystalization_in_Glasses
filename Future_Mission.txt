@@ -1,0 +1,1 @@
+The code that calculates d_5NN and NN are prohivitively computationally heavy. The productivity of the code would improve significantly if that section could be run in parallel on multiple processors to speed up the calculation. 
