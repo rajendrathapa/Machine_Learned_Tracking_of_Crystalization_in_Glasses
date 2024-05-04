@@ -1,1 +1,4 @@
 The code that calculates d_5NN and NN are prohivitively computationally heavy. The productivity of the code would improve significantly if that section could be run in parallel on multiple processors to speed up the calculation. 
+
+May 04, 2023
+Parallel implementations of the codes to calculate d_5NN and N_N have now been added. 
